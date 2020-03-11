@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+    
+    function calc()
+    {
+
+        var n1 = parseFloat (document.getElementById('n1').value);
+        var n2 = parseFloat (document.getElementById('n2').value);
+
+        var oper = document.getElementById('operators').value;
+
+        if (oper === '+')
+        {
+            document.getElementById('result').value = n1+n2;
+        }
+        
+        if (oper === '-')
+        {
+            document.getElementById('result').value = n1-n2;
+        }
+        
+        if (oper === '/')
+        {
+            document.getElementById('result').value = n1/n2;
+        }
+        
+        if (oper === 'x')
+        {
+            document.getElementById('result').value = n1*n2;
+        }
+    }
+    </script>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>Mini Calc</header>
+        <div class="input-container">
+            <input type="text" id="n1"/><br><br>
+        </div>
+
+        <div class="input-container">    
+        <input type="text" id="n2"/><br><br>
+        </div>
+
+        <select id="operators">
+        <option value="+">+</option>        
+        <option value="-">-</option>        
+        <option value="/">/</option>        
+        <option value="x">x</option>        
+        </select>
+        <button onclick="calc();">Ans</button>
+        <div class="input-container">
+            <input type="text" id="result"/>
+        </div>
+    </div>
+</body>
+</html>

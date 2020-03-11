@@ -1,0 +1,32 @@
+body {
+    padding-bottom: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 170px;
+}
+
+.container {
+    text-align: center;
+    background: rgb(0, 158, 0);
+    padding: 50px;
+    border-radius: 10%;
+}
+
+header {
+    color: White;
+    font-size: 38px;
+}
+
+.input-container input{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3%; 
+}
+
+button {
+    padding: 8px; 
+}
+
+button:hover, button:active{
+    background:red;
+}
